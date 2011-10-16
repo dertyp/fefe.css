@@ -82,9 +82,11 @@ body > ul > li > a:first-child {
   right: 40px;
   font-family: Georgia;
   font-size: 70%;
+  text-decoration: none !important;
+
 }
 
-body > ul > li > a:first-child::before {
+body > ul > li > a:first-child:before {
   text-transform: uppercase;
   content: "Permalink: ";
 }
