@@ -9,6 +9,15 @@ body {
 
 a {
   color: #2e9ec9;
+  -webkit-transition: all, 1s;
+     -moz-transition: all, 1s;
+       -o-transition: all, 1s;
+      -ms-transition: all, 1s;
+          transition: all, 1s;
+}
+
+a:hover {
+  color: #2786aa;
 }
 
 h2 {
@@ -52,9 +61,13 @@ li {
   padding-bottom: 60px;
   background:#fff;
   color: #444444;
-  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-          box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+
 }
 
 li:before, li:after {
@@ -68,10 +81,11 @@ body > ul > li > a:first-child {
   bottom: 30px;
   right: 40px;
   font-family: Georgia;
+  font-size: 70%;
 }
 
 body > ul > li > a:first-child::before {
-  font-size: 100%;
+  text-transform: uppercase;
   content: "Permalink: ";
 }
 
